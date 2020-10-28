@@ -1,13 +1,16 @@
+.transition-all, .brand-item:after {
+  transition: all 0.5s; }
+
 body {
-  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
   color: #333; }
 
 .heading-primary {
   line-height: 3.2rem;
   color: #000;
-  font-weight: 500;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  font-weight: 500; }
 
 .mb-7per {
   margin-bottom: 7.1%; }
@@ -23,5 +26,49 @@ html {
   box-sizing: inherit;
   font-size: 62.5%; }
 
+.brand-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  flex: 0 0 20%;
+  width: 23.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  line-height: 2.5rem;
+  padding: 2.1rem 2.1rem 2.1rem 0;
+  border-bottom: solid 0.1rem rgba(229, 229, 229, 0.75); }
+  .brand-item:after {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 3rem rgba(122, 122, 122, 0.28);
+    padding: 1.9rem 2.4rem 2.2rem 0;
+    background-color: #fff;
+    transform: scale(1.18);
+    transition: all 0.5s;
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    top: 0; }
+  .brand-item:hover:after {
+    opacity: 1; }
+  .brand-item svg {
+    fill: #333;
+    height: 1rem;
+    width: 1rem; }
+  .brand-item__link {
+    color: inherit;
+    text-decoration: none; }
+
 .brands-box {
   padding: 6.5rem 9.8px 8.4rem 4.9%; }
+  .brands-box__brand-item:not(:last-child) {
+    margin-right: 3.1%; }
+  .brands-box__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; }

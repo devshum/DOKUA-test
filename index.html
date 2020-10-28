@@ -4,61 +4,166 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/main.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
     <title>DOKUA TEST</title>
   </head>
   <body> 
-    <div class="brands-box" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+    <!-- sprites-->
+    <svg style="display: none;">
+      <!-- sprite 1-->
+      <symbol id="arrow-right">
+        <g>
+          <path d="M1 9.243l-.707-.707L3.828 5 .293 1.464 1 .757 5.243 5 1 9.243z"> </path>
+        </g>
+      </symbol>
+    </svg>
+    <div class="brands-box" itemscope="itemscope">
       <h1 class="heading-primary mb-7per" itemprop="name">Мы продаем запчасти для <br> следующих марок автомобилей:</h1>
       <ul class="brands-box__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Audi</span>
-            <meta itemprop="position" content="1"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Ford</span>
-            <meta itemprop="position" content="2"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Mazda</span>
-            <meta itemprop="position" content="3"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Peugeot</span>
-            <meta itemprop="position" content="4"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Subaru</span>
-            <meta itemprop="position" content="5"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">BMW</span>
-            <meta itemprop="position" content="6"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Kia</span>
-            <meta itemprop="position" content="7"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Nissan</span>
-            <meta itemprop="position" content="8"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Skoda</span>
-            <meta itemprop="position" content="9"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Volkswagen</span>
-            <meta itemprop="position" content="10"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Fiat</span>
-            <meta itemprop="position" content="11"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Lexus</span>
-            <meta itemprop="position" content="12"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Opel</span>
-            <meta itemprop="position" content="13"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">SsangYong</span>
-            <meta itemprop="position" content="14"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Volvo</span>
-            <meta itemprop="position" content="15"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Masserati</span>
-            <meta itemprop="position" content="16"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Audi</span>
-            <meta itemprop="position" content="17"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Mazda</span>
-            <meta itemprop="position" content="18"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Honda</span>
-            <meta itemprop="position" content="19"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Mercedes</span>
-            <meta itemprop="position" content="20"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Renault</span>
-            <meta itemprop="position" content="21"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Suzuki</span>
-            <meta itemprop="position" content="22"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Chevrolet</span>
-            <meta itemprop="position" content="23"/></a></li>
-        <li class="brands-box__item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brands-box__link" href="#" itemprop="item"> <span itemprop="name">Renault</span>
-            <meta itemprop="position" content="24"/></a></li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Audi</span>
+            <meta itemprop="position" content="1"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Ford</span>
+            <meta itemprop="position" content="2"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Mazda</span>
+            <meta itemprop="position" content="3"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Peugeot</span>
+            <meta itemprop="position" content="4"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Subaru</span>
+            <meta itemprop="position" content="5"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на BMW</span>
+            <meta itemprop="position" content="6"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Kia</span>
+            <meta itemprop="position" content="7"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Nissan</span>
+            <meta itemprop="position" content="8"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Skoda</span>
+            <meta itemprop="position" content="9"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Volkswagen</span>
+            <meta itemprop="position" content="10"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Fiat</span>
+            <meta itemprop="position" content="11"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Lexus</span>
+            <meta itemprop="position" content="12"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Opel</span>
+            <meta itemprop="position" content="13"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на SsangYong</span>
+            <meta itemprop="position" content="14"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Volvo</span>
+            <meta itemprop="position" content="15"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Masserati</span>
+            <meta itemprop="position" content="16"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Audi</span>
+            <meta itemprop="position" content="17"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Mazda</span>
+            <meta itemprop="position" content="18"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Honda</span>
+            <meta itemprop="position" content="19"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Mercedes</span>
+            <meta itemprop="position" content="20"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Renault</span>
+            <meta itemprop="position" content="21"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Suzuki</span>
+            <meta itemprop="position" content="22"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Chevrolet</span>
+            <meta itemprop="position" content="23"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="brands-box__brand-item brand-item" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="brand-item__link" href="#" itemprop="item"> <span itemprop="name">Запчасти на Renault</span>
+            <meta itemprop="position" content="24"/></a>
+          <svg class="icon-box__icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </li>
       </ul>
     </div>
   </body>
