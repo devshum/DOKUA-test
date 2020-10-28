@@ -9,6 +9,9 @@ body {
   font-weight: 500;
   font-size: 2.4rem; }
 
+.mb-7per {
+  margin-bottom: 7.1%; }
+
 *,
 *::before,
 *::after {
@@ -19,3 +22,6 @@ body {
 html {
   box-sizing: inherit;
   font-size: 62.5%; }
+
+.brands-box {
+  padding: 6.5rem 9.8px 8.4rem 4.9%; }
