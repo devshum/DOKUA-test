@@ -15,7 +15,6 @@
 
   &:after {
     @include heightWidth(100%, 100%);
-    @extend .transition-all;
 
     box-shadow: 0 0 3rem rgba(122, 122, 122, 0.28);
     padding: 1.9rem 2.4rem 2.2rem 0;
@@ -31,17 +30,57 @@
     top: 0;
   }
 
+  span:nth-child(2),
+  &__paragraph,
+  &:after,
+  &__link,
+  svg {
+    @extend .transition-all;
+  }
+
   &:hover:after {
     opacity: 1;
   }
 
+  span:nth-child(2) {
+    position: absolute;
+
+    font-size: 1.3rem;
+    display: block;
+    color: $color-gray-dark;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover span:nth-child(2) {
+    opacity: 1;
+    visibility: visible;
+  }
+
   svg {
+    @include heightWidth(2.2rem, 2.2rem);
+
+    padding: 0.6rem 0.85rem;
     fill: $color-primary;
-    @include heightWidth(1rem, 1rem);
+    border-radius: 50%;
+  }
+
+  &:hover svg {
+    background-color: $color-blue;
+    fill: $color-white;
+  }
+
+  &:hover &__link {
+    transform: translateY(-1.2rem);
   }
 
   &__link {
     color: inherit;
     text-decoration: none;
+    position: relative;
+  }
+
+  &:hover &__paragraph {
+    color: $color-blue;
   }
 }
