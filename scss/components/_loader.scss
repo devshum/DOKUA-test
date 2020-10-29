@@ -1,0 +1,14 @@
+.loader {
+  transform: translateX(-50%);
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+
+  svg {
+    animation: rotate 1.5s infinite linear;
+    transform-origin: 44% 50%;
+    fill: $color-primary;
+
+    @include heightWidth(6.5rem, 6.5rem);
+  }
+}

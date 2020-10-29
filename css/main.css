@@ -2,6 +2,12 @@
 .brand-item svg, .btn:link, .btn:visited {
   transition: all 0.5s; }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
@@ -97,6 +103,18 @@ html {
   .brand-item:hover .brand-item__paragraph {
     color: #1a77d2; }
 
+.loader {
+  transform: translateX(-50%);
+  position: absolute;
+  top: 15rem;
+  left: 50%; }
+  .loader svg {
+    animation: rotate 1.5s infinite linear;
+    transform-origin: 44% 50%;
+    fill: #333;
+    height: 6.5rem;
+    width: 6.5rem; }
+
 .btn:link, .btn:visited {
   background-color: #f5f5f5;
   text-decoration: none;
@@ -131,6 +149,7 @@ html {
     display: grid;
     grid-column-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(24.8rem, 1fr));
+    min-height: 14rem;
     list-style: none; }
   .brands-box__btn {
     transform: translateX(-50%);

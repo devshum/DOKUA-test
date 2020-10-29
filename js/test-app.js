@@ -153,6 +153,25 @@ const renderBrandItem = (item, container) => {
     container.insertAdjacentHTML('afterbegin', markup)
 };
 
+renderLoader = containerString => {
+    const container = containerString;
+
+    const loader = `
+        <div class="loader">
+            <svg>
+                <use href="../img/cw-icon.svg#icon-cw"></use>
+            </svg>
+        </div>
+    `;
+
+    container.insertAdjacentHTML('afterbegin', loader);
+};
+
+clearLoader = () => {
+    const loader = document.querySelector('.loader');
+    if(loader) loader.parentElement.removeChild(loader);
+}
+
 const renderBrandsPage = brands => {
     const root = document.getElementById('root');
 
@@ -178,7 +197,17 @@ const renderBrandsPage = brands => {
 
     const containerList = document.querySelector('.brands-box__list');
 
-    brands["itemListElement"].map(item => renderBrandItem(item, containerList))
+    renderLoader(containerList);
+
+    setTimeout(() => {
+        brands["itemListElement"].map(item => renderBrandItem(item, containerList))
+        clearLoader();
+    }, 1000);
 };
 
-renderBrandsPage(brandsData)
+renderLoader(document.getElementById('root'));
+
+setTimeout(() => {
+    renderBrandsPage(brandsData);
+    clearLoader();
+}, 1000);
