@@ -1,5 +1,6 @@
 .brands-box {
   padding: 6.5rem 9.8px 8.4rem 4.9%;
+  position: relative;
 
   &__brand-item {
     &:not(:last-child) {
@@ -12,5 +13,11 @@
     flex-wrap: wrap;
 
     list-style: none;
+  }
+
+  &__btn {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
   }
 }

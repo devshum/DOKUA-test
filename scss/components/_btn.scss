@@ -1,0 +1,17 @@
+.btn {
+  &:link,
+  &:visited {
+    @extend .transition-all;
+
+    background-color: $color-gray-light;
+    text-decoration: none;
+    padding: 2rem 4.1rem;
+    color: $color-blue;
+    line-height: 2rem;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-dark;
+  }
+}

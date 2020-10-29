@@ -7,7 +7,6 @@
   flex: 0 0 20%;
   width: 23.8rem;
   cursor: pointer;
-  font-weight: 400;
   position: relative;
   line-height: 2.5rem;
   padding: 2.1rem 2.1rem 2.1rem 0;
@@ -75,9 +74,12 @@
   }
 
   &__link {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      position: relative;
+    }
   }
 
   &:hover &__paragraph {
