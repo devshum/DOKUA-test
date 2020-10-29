@@ -1,23 +1,35 @@
 .brands-box {
-  padding: 6.5rem 9.8px 8.4rem 4.9%;
+  padding: 6.5rem 9.8rem 0 9.8rem;
   position: relative;
 
-  &__brand-item {
-    &:not(:last-child) {
-      margin-right: 3.1%;
-    }
+  @include respond(tab-land) {
+    padding: 7.4rem 3rem 0 3rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 4.6rem 2.3rem 0 2.3rem;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(24.8rem, 1fr));
 
     list-style: none;
   }
 
   &__btn {
     transform: translateX(-50%);
+    margin-bottom: 8.4rem;
     position: absolute;
     left: 50%;
+
+    @include respond(tab-port) {
+      margin-bottom: 7.4rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 6.9rem;
+    }
   }
 }

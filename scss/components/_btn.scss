@@ -8,6 +8,16 @@
     padding: 2rem 4.1rem;
     color: $color-blue;
     line-height: 2rem;
+    text-align: center;
+  }
+
+  @include respond(tab-port) {
+    width: 80%;
+    margin-bottom: 6.9rem;
+  }
+
+  @include respond(phone) {
+    padding: 2rem 1rem !important;
   }
 
   &:hover {

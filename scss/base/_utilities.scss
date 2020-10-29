@@ -1,7 +1,15 @@
 .mb-69px {
   margin-bottom: 6.9rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 1rem;
+  }
 }
 
 .mb-56px {
   margin-bottom: 5.6rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 2.5rem;
+  }
 }
