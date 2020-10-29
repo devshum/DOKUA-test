@@ -122,7 +122,7 @@ let brandsData = `{
       "name": "Audi",
       "item": "#"  
     }]
-  }`
+}`
 
 brandsData = JSON.parse(brandsData);
 
@@ -164,6 +164,8 @@ renderLoader = containerString => {
         </div>
     `;
 
+
+
     container.insertAdjacentHTML('afterbegin', loader);
 };
 
@@ -202,7 +204,52 @@ const renderBrandsPage = brands => {
     setTimeout(() => {
         brands["itemListElement"].map(item => renderBrandItem(item, containerList))
         clearLoader();
+
+        document.querySelector('.btn').addEventListener('click', function() {
+            let newBrandsData = `
+                [{
+                  "@type": "ListItem", 
+                  "position": 28, 
+                  "name": "newItem",
+                  "item": "#"    
+                },{
+                  "@type": "ListItem", 
+                  "position": 27, 
+                  "name": "newItem",
+                  "item": "#"    
+                },{
+                  "@type": "ListItem", 
+                  "position": 26, 
+                  "name": "newItem",
+                  "item": "#"    
+                },{
+                  "@type": "ListItem", 
+                  "position": 25, 
+                  "name": "newItem",
+                  "item": "#"    
+                }]`
+
+            newBrandsData = JSON.parse(newBrandsData);
+            // console.log(brands["itemListElement"]);
+            console.log(newBrandsData);
+
+            brandsData["itemListElement"] = [...newBrandsData, ...brands["itemListElement"]]
+
+            containerList.innerHTML = '';
+            renderLoader(containerList);
+
+            console.log(brandsData["itemListElement"])
+            
+            setTimeout(() => {
+                brandsData["itemListElement"].map(item => renderBrandItem(item, containerList));
+                clearLoader();
+            }, 1000);
+            
+
+        });
     }, 1000);
+
+   
 };
 
 renderLoader(document.getElementById('root'));
@@ -211,3 +258,4 @@ setTimeout(() => {
     renderBrandsPage(brandsData);
     clearLoader();
 }, 1000);
+
